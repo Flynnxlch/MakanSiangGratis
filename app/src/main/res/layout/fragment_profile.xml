@@ -1,0 +1,107 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="12dp"
+    android:background="@color/white">
+
+    <!-- Profile Picture Container -->
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/misyalgibran"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:background="@drawable/roundedito"
+        android:contentDescription="@string/profile_picture" />
+
+    <!-- Change Picture Button -->
+    <TextView
+        android:id="@+id/tvChangePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_picture"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <!-- Username Field -->
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_username"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@drawable/roundedito"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- NIM Field -->
+    <EditText
+        android:id="@+id/etNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nim"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/roundedito"
+        android:layout_marginTop="8dp" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundedito"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView with CheckBox -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvAgreement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/profileC"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/cbAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Save Changes Button -->
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_changes"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/Firefly4"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:enabled="false" />
+
+</LinearLayout>

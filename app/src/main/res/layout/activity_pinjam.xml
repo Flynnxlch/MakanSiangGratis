@@ -1,0 +1,250 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_marginTop="12dp"
+    android:background="@color/white">
+
+    <!-- Tombol Kembali -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/baseline_exit_to_app_24"
+        android:backgroundTint="@color/shitpink"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Peminjaman"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack" />
+
+    <!-- Nama Peminjam -->
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nama_peminjam"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/roundedito"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Email Peminjam -->
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/etEmail"
+        android:textColorHint="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email_peminjam"
+        android:inputType="textEmailAddress"
+        android:enabled="false"
+        android:padding="12dp"
+        android:background="@drawable/roundedito"
+        app:layout_constraintTop_toBottomOf="@id/etNama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Pilih Fakultas -->
+    <Spinner
+        android:id="@+id/spinnerFakultas"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="48dp"
+        android:background="@drawable/roundedito"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Pilih Jenis Fasilitas -->
+    <Spinner
+        android:id="@+id/spinnerJenis"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@drawable/roundedito"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/spinnerFakultas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pemberitahuanKTM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerJenis"
+        android:text="Tunjukkan Kartu Identitas Mahasiswa anda"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+
+    <!-- Tombol Ambil Gambar -->
+    <Button
+        android:id="@+id/btnAmbilGambar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ambil_gambar"
+        android:backgroundTint="@color/Firefly4"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/pemberitahuanKTM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Status Gambar -->
+    <TextView
+        android:id="@+id/tvStatusGambar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/status_gambar_belum"
+        android:textSize="14sp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/btnAmbilGambar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Pilih Tanggal Peminjaman -->
+    <TextView
+        android:id="@+id/tvTanggalPeminjaman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_tanggal_peminjaman"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvStatusGambar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Layout Horizontal untuk Pilih Tanggal Peminjaman -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPilihTanggalPeminjaman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTanggalPeminjaman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- EditText untuk Tanggal Peminjaman (Non-editable) -->
+        <EditText
+            android:id="@+id/etTanggalPeminjaman"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedito"
+            android:clickable="true"
+            android:focusable="false"
+            android:layout_marginEnd="4dp"
+            android:textColorHint="@color/black"
+            android:hint="@string/hint_tanggal_peminjaman"
+            android:padding="12dp"
+            app:layout_constraintEnd_toStartOf="@id/btnPilihTanggalPeminjaman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Tombol Pilih Tanggal Peminjaman -->
+        <Button
+            android:id="@+id/btnPilihTanggalPeminjaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pilih_tanggal"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/etTanggalPeminjaman"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Pilih Tanggal Pengembalian -->
+    <TextView
+        android:id="@+id/tvTanggalPengembalian"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_tanggal_pengembalian"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutPilihTanggalPeminjaman"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Layout Horizontal untuk Pilih Tanggal Pengembalian -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPilihTanggalPengembalian"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTanggalPengembalian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- EditText untuk Tanggal Pengembalian (Non-editable) -->
+        <EditText
+            android:id="@+id/etTanggalPengembalian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_tanggal_pengembalian"
+            android:textColorHint="@color/black"
+            android:layout_marginEnd="4dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp"
+            android:background="@drawable/roundedito"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnPilihTanggalPengembalian" />
+
+        <!-- Tombol Pilih Tanggal Pengembalian -->
+        <Button
+            android:id="@+id/btnPilihTanggalPengembalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pilih_tanggal"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/etTanggalPengembalian"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Tombol Pinjam -->
+    <Button
+        android:id="@+id/btnPinjam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pinjam"
+        android:backgroundTint="@color/Firefly4"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutPilihTanggalPengembalian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

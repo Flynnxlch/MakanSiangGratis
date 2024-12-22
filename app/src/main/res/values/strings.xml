@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Procurement Of Goods</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Nama_Mhs">MUHAMMAD MISYAL GIBRANI RAZZAQ</string>
+    <string name="Welcoming">Welcome Aboard</string>
+    <string name="Fitur">Our Feature</string>
+    <string name="Fasilitas1">Newest Feature</string>
+    <string name="Fasilitas2">Other Feature</string>
+    <string name="Peminjaman">Borrowing Goods</string>
+    <string name="Pengembalian">Return of Goods</string>
+    <string name="Teater">To Be Added</string>
+    <string name="Riwayat">Your History</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="change_picture">Change Picture</string>
+    <string name="hint_username">Enter your username</string>
+    <string name="hint_nim">Enter your NIM</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="peminjaman">借款</string>
+    <string name="hint_nama_peminjam">Name</string>
+    <string name="hint_email_peminjam">Email</string>
+    <string name="ambil_gambar">Take A Picture</string>
+    <string name="status_gambar_belum">No Picture Detected</string>
+    <string name="hint_tanggal_peminjaman">Tanggal Peminjaman</string>
+    <string name="hint_tanggal_pengembalian">Tanggal Pengembalian</string>
+    <string name="pilih_tanggal">Choose Date</string>
+    <string name="pinjam">Pinjam</string>
+    <string name="kembali">Kembalikan</string>
+    <string name="back_button">Back</string>
+    <string name="status_G">照片已拍摄</string>
+    <string name="profileC">By this, i agree by the terms and condition</string>
+
+
+</resources>

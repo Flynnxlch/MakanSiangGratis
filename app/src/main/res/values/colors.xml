@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="Firefly1">#f0f1c7</color>
+    <color name="Firefly2">#aecdc7</color>
+    <color name="Firefly3">#6f9c97</color>
+    <color name="Firefly4">#428a91</color>
+    <color name="Firefly5">#2d626a</color>
+
+    <color name="Robin1">#cfffdd</color>
+    <color name="Robin2">#dbe7fe</color>
+    <color name="Robin3">#d0baff</color>
+    <color name="Robin4">#d09efe</color>
+    <color name="Robin5">#b57eff</color>
+
+    <color name="shitpink">#ff6b9f</color>
+    <color name="shit">#fbaf01</color>
+    <color name="cyan">#5fd2d7</color>
+    <color name="yello">#f3db19</color>
+
+    <color name="negre">#39FF14</color>
+    <color name="nere">#FF3131</color>
+
+</resources>
